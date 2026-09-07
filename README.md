@@ -8,8 +8,6 @@ MAITRI is a full‑stack prototype that demonstrates an end‑to‑end workflow 
 - **Semantic Startup Matching** – Vector similarity (ChromaDB) blended with deterministic capability scoring.
 - **Eligibility Engine** – Rule‑based checks (TRL, certifications, experience, capacity).
 - **Pilot & KPI Tracking** – Record pilot outcomes and automatically compute scale recommendations.
-- **Policy Assistant (RAG)** – Ask policy‑related questions; answers are grounded in a knowledge base.
-- **Graph Explorer** – Visual relationship graph powered by Neo4j.
 - **Dockerised Neo4j** – Easy local deployment with containerised graph database.
 
 ## Architecture
