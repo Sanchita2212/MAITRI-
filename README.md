@@ -1,41 +1,3 @@
-# MAITRI – Government Innovation & Startup Enablement Platform
-
-## Overview
-MAITRI is a full‑stack prototype that demonstrates an end‑to‑end workflow for government departments to identify challenges, discover matching startups, evaluate eligibility, and pilot solutions. The platform integrates semantic search (ChromaDB), graph relationships (Neo4j), deterministic rule‑based eligibility, and LLM‑augmented RAG for policy assistance.
-
-## Features
-
-- **Challenge Generation**
-  - Uses Groq LLM to transform government problem statements into structured innovation challenges.
-  - Generates titles, descriptions, required technologies, and impact metrics.
-
-- **Semantic Startup Matching**
-  - Stores startup embeddings in ChromaDB for fast vector search.
-  - Retrieves top‑k candidates using vector similarity combined with a deterministic capability score (technology, sector, capacity).
-
-- **Eligibility Engine**
-  - Rule‑based evaluation of TRL, certifications, prior government experience, and capacity.
-  - Returns status (`ELIGIBLE`, `BORDERLINE`, `NOT_ELIGIBLE`) with clear explanations.
-
-- **Pilot & KPI Tracking**
-  - Records pilot deployments, outcomes, and KPI measurements.
-  - Computes scale‑up recommendations based on success criteria.
-
-- **Policy Assistant (RAG)**
-  - Retrieves relevant knowledge‑base documents from ChromaDB.
-  - Summarises answers with Groq LLM, grounding output in source material.
-
-- **Graph Explorer**
-  - Syncs relational data from SQLite to Neo4j.
-  - Provides interactive graph visualisation of departments → problems → challenges → startups.
-
-- **Dockerised Neo4j**
-  - Runs Neo4j in a Docker container for easy local setup.
-  - Exposes Bolt and HTTP endpoints for application integration.
-
-## Pipeline & Orchestration Flow
-
-The MAITRI platform follows a clear pipeline:
 
 # MAITRI – Government Innovation & Startup Enablement Platform
 
@@ -63,10 +25,6 @@ MAITRI is a full‑stack prototype that demonstrates an end‑to‑end workflow 
 - **Policy Assistant (RAG)**
   - Retrieves relevant knowledge‑base documents from ChromaDB.
   - Summarises answers with Groq LLM, grounding output in source material.
-
-- **Graph Explorer**
-  - Syncs relational data from SQLite to Neo4j.
-  - Provides interactive graph visualisation of departments → problems → challenges → startups.
 
 - **Dockerised Neo4j**
   - Runs Neo4j in a Docker container for easy local setup.
